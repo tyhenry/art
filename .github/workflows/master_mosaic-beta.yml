@@ -23,6 +23,7 @@ jobs:
     - name: npm install, build, and test
       run: |
         cd frontend
+        ls
         npm install
         npm run build
 
