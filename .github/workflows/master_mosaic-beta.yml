@@ -21,9 +21,9 @@ jobs:
         node-version: '12.x'
 
     - name: npm install, build, and test
+      env:
+        GITHUB_WORKSPACE: /home/runner/work/art/art/frontend
       run: |
-        cd frontend
-        ls
         npm install
         npm run build
 
